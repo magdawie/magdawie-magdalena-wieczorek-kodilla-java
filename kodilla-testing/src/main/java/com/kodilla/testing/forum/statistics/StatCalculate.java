@@ -46,8 +46,10 @@ public class StatCalculate {
         numberOfUsers = statistics.usersNames().size();
         numberOfPosts = statistics.postsCount();
         numberOfComments = statistics.commentsCount();
-        averageNumberOfPostPerUser = (double) numberOfPosts/(double) numberOfUsers;
-        averageNumberOfCommentsPerUser = (double) numberOfComments/(double) numberOfUsers;
+        if(numberOfUsers != 0){
+            averageNumberOfPostPerUser = (double) numberOfPosts/(double) numberOfUsers;
+            averageNumberOfCommentsPerUser = (double) numberOfComments/(double) numberOfUsers;
+        }
         averageNumberOFCommentsPrePost = (double) numberOfComments/(double) numberOfPosts;
     }
 
