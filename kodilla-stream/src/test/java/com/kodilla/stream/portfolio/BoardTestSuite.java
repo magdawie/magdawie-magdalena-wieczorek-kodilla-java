@@ -150,11 +150,11 @@ class BoardTestSuite {
         OptionalDouble average =  project.getTaskLists().stream()
                 .filter(inProgressTasks::contains)
                 .flatMap(x -> x.getTasks().stream())
-                .mapToInt(x-> Period.between(x.getCreated(), x.getDeadline()).getDays())
+                .mapToInt(x-> Period.between(x.getCreated(), LocalDate.now()).getDays())
                 .average();
 
         //Then
-        assertEquals(8.0, average.getAsDouble());
+        assertEquals(10.0, average.getAsDouble());
 
     }
 }
