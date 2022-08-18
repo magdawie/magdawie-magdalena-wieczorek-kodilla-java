@@ -1,5 +1,6 @@
 package com.kodilla.stream;
 
+import com.kodilla.stream.array.ArrayOperations;
 import com.kodilla.stream.world.Continent;
 import com.kodilla.stream.world.Country;
 import com.kodilla.stream.world.World;
@@ -22,6 +23,5 @@ public class StreamMainPeople {
         world.addContinent(europe);
 
         System.out.println("People quantity: " + world.getPeopleQuantity());
-
     }
 }
