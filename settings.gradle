@@ -4,3 +4,5 @@ include 'kodilla-stream'
 include 'kodilla-spring'
 include 'kodilla-spring-web'
 include 'kodilla-hibernate'
+include 'com.kodilla.jdbc'
+
